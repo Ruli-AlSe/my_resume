@@ -1,4 +1,17 @@
 import Technologies from "./Technologies";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import {
+  faEnvelope,
+  faPhone,
+  faLocationDot,
+  faCakeCandles,
+  faComputer,
+  faGears,
+  faTerminal,
+  faCode,
+  faLanguage,
+} from "@fortawesome/free-solid-svg-icons";
 import "../styles/sidebar.scss";
 
 export default function SideBar() {
@@ -17,40 +30,65 @@ export default function SideBar() {
         Frontend and Experimentation Developer
       </h3>
       <div className="sidebar__personal-info">
-        <p className="sidebar__text">June 2, 1993</p>
-        <p className="sidebar__text">Tlaquepaque, Jal.</p>
-        <p className="sidebar__text">+52 (456) 114 6217</p>
+        <p className="sidebar__text">
+          <FontAwesomeIcon icon={faCakeCandles} />
+          June 2, 1993
+        </p>
+        <p className="sidebar__text">
+          <FontAwesomeIcon icon={faLocationDot} />
+          Tlaquepaque, Jal.
+        </p>
+        <p className="sidebar__text">
+          <FontAwesomeIcon icon={faPhone} />
+          +52 (456) 114 6217
+        </p>
         <div className="sidebar__social-media">
           <p className="sidebar__text">
+            <FontAwesomeIcon icon={faLinkedin} />
             Linkedin: <span>www.linkedin.com/in/ruli-alse</span>
           </p>
           <p className="sidebar__text">
+            <FontAwesomeIcon icon={faGithub} />
             Github: <span>https://github.com/Ruli-AlSe</span>
           </p>
           <p className="sidebar__text">
+            <FontAwesomeIcon icon={faEnvelope} />
             Gmail: <span>ra.almazaserrano@gmail.com</span>
           </p>
         </div>
       </div>
       <Technologies
         description={"Frontend"}
-        technologies={["React.js", "Next.js", "Jest", "SASS", "TestCafe"]}
+        technologies={[
+          "React.js",
+          "Next.js",
+          "Jest",
+          "SASS",
+          "HTML5",
+          "jQuery",
+          "JS ES6",
+        ]}
+        icon={faComputer}
       />
       <Technologies
         description={"Backend"}
-        technologies={["Ruby on Rails", "Postgresql", "MongoDB", "Git"]}
+        technologies={["Ruby on Rails", "Postgresql"]}
+        icon={faGears}
       />
       <Technologies
         description={"DevOps"}
         technologies={["Github CI/CD", "Docker", "Vagrant"]}
+        icon={faTerminal}
       />
       <Technologies
         description={"Programing Languages"}
-        technologies={["JS", "TS", "Ruby", "C++", "Python"]}
+        technologies={["JavaScript", "TypeScript", "Ruby", "Python"]}
+        icon={faCode}
       />
       <Technologies
         description={"Languages"}
-        technologies={["Espanish", "English"]}
+        technologies={["Spanish (native)", "English (Conversational)"]}
+        icon={faLanguage}
       />
     </div>
   );
