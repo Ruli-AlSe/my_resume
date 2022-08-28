@@ -1,0 +1,38 @@
+@import "../variables.scss";
+
+.resume {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  &__main-content {
+    width: 60%;
+    max-width: 900px;
+    padding: 0 20px;
+  }
+  &__title {
+    text-align: left;
+    border-radius: 20px;
+    color: $color-white;
+    font-weight: $font-medium;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: 40%;
+
+    svg {
+      margin: 10px 20px;
+    }
+    &--odd {
+      background-color: $color-strong-blue;
+    }
+    &--even {
+      background-color: $color-gold;
+    }
+  }
+  &__paragraph {
+    font-size: 20px;
+    font-weight: $font-medium;
+    line-height: 27px;
+    text-align: left;
+  }
+}

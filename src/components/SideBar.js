@@ -12,7 +12,7 @@ import {
   faCode,
   faLanguage,
 } from "@fortawesome/free-solid-svg-icons";
-import "../styles/sidebar.scss";
+import "../styles/components/sidebar.scss";
 
 export default function SideBar() {
   return (
@@ -59,15 +59,7 @@ export default function SideBar() {
       </div>
       <Technologies
         description={"Frontend"}
-        technologies={[
-          "React.js",
-          "Next.js",
-          "Jest",
-          "SASS",
-          "HTML5",
-          "jQuery",
-          "JS ES6",
-        ]}
+        technologies={["React.js", "Jest", "SASS", "HTML5", "jQuery", "JS ES6"]}
         icon={faComputer}
       />
       <Technologies
