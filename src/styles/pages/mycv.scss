@@ -18,7 +18,6 @@
     flex-direction: row;
     align-items: center;
     max-width: 40%;
-
     svg {
       margin: 10px 20px;
     }
@@ -34,5 +33,30 @@
     font-weight: $font-medium;
     line-height: 27px;
     text-align: left;
+    &--with-indentation {
+      padding: 0 30px;
+      font-style: italic;
+    }
+  }
+  &__header {
+    text-align: left;
+    font-size: 20px;
+    font-family: $elc-font;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    &--date-range,
+    &--company {
+      font-weight: $font-bold;
+    }
+    &--field {
+      font-weight: $font-light;
+      font-style: italic;
+      color: $color-old-gold;
+      font-size: 22px;
+    }
+    &--date-range {
+      font-weight: $font-bold;
+    }
   }
 }
