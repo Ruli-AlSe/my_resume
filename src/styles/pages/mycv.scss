@@ -4,29 +4,44 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
+  &__container--with-padding {
+    width: auto;
+    padding-left: 70px;
+  }
+  &__header {
+    text-align: left;
+    font-size: 20px;
+    font-family: $elc-font;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    &--field {
+      font-weight: $font-light;
+      font-style: italic;
+      color: $color-old-gold;
+      font-size: 22px;
+    }
+    &--date-range {
+      font-weight: $font-bold;
+    }
+    &--date-range,
+    &--company {
+      font-weight: $font-bold;
+    }
+  }
+  &__job-container {
+    border-bottom: 1px solid $color-light-gray;
+    margin-bottom: 50px;
+  }
+  &__job-details {
+    text-align: left;
+    font-size: 20px;
+  }
   &__main-content {
     width: 60%;
     max-width: 900px;
     padding: 0 20px;
-  }
-  &__title {
-    text-align: left;
-    border-radius: 20px;
-    color: $color-white;
-    font-weight: $font-medium;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    max-width: 40%;
-    svg {
-      margin: 10px 20px;
-    }
-    &--odd {
-      background-color: $color-strong-blue;
-    }
-    &--even {
-      background-color: $color-gold;
-    }
+    background-color: $color-white;
   }
   &__paragraph {
     font-size: 20px;
@@ -38,25 +53,27 @@
       font-style: italic;
     }
   }
-  &__header {
+  &__section {
+    margin-top: 50px;
+    padding: 0 20px 0 0;
+  }
+  &__title {
     text-align: left;
-    font-size: 20px;
-    font-family: $elc-font;
+    border-radius: 20px;
+    color: $color-white;
+    font-weight: $font-medium;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    &--date-range,
-    &--company {
-      font-weight: $font-bold;
+    align-items: center;
+    max-width: 60%;
+    &--even {
+      background-color: $color-gold;
     }
-    &--field {
-      font-weight: $font-light;
-      font-style: italic;
-      color: $color-old-gold;
-      font-size: 22px;
+    &--odd {
+      background-color: $color-strong-blue;
     }
-    &--date-range {
-      font-weight: $font-bold;
+    svg {
+      margin: 10px 20px;
     }
   }
 }

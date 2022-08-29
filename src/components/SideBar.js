@@ -1,9 +1,12 @@
-import Technologies from "./Technologies";
+import Skills from "./Skills";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import {
+  faGithub,
+  faLinkedin,
+  faWhatsapp,
+} from "@fortawesome/free-brands-svg-icons";
 import {
   faEnvelope,
-  faPhone,
   faLocationDot,
   faCakeCandles,
   faComputer,
@@ -39,7 +42,7 @@ export default function SideBar() {
           Tlaquepaque, Jal.
         </p>
         <p className="sidebar__text">
-          <FontAwesomeIcon icon={faPhone} />
+          <FontAwesomeIcon icon={faWhatsapp} />
           +52 (456) 114 6217
         </p>
         <div className="sidebar__social-media">
@@ -57,29 +60,29 @@ export default function SideBar() {
           </p>
         </div>
       </div>
-      <Technologies
+      <Skills
         description={"Frontend"}
-        technologies={["React.js", "Jest", "SASS", "HTML5", "jQuery", "JS ES6"]}
+        skills={["React.js", "Jest", "SASS", "HTML5", "jQuery", "JS ES6"]}
         icon={faComputer}
       />
-      <Technologies
+      <Skills
         description={"Backend"}
-        technologies={["Ruby on Rails", "Postgresql"]}
+        skills={["Ruby on Rails", "Postgresql"]}
         icon={faGears}
       />
-      <Technologies
+      <Skills
         description={"DevOps"}
-        technologies={["Github CI/CD", "Docker", "Vagrant"]}
+        skills={["Github CI/CD", "Docker", "Vagrant"]}
         icon={faTerminal}
       />
-      <Technologies
+      <Skills
         description={"Programing Languages"}
-        technologies={["JavaScript", "TypeScript", "Ruby", "Python"]}
+        skills={["JavaScript", "TypeScript", "Ruby", "Python"]}
         icon={faCode}
       />
-      <Technologies
+      <Skills
         description={"Languages"}
-        technologies={["Spanish (native)", "English (Conversational)"]}
+        skills={["Spanish (native)", "English (Conversational)"]}
         icon={faLanguage}
       />
     </div>
