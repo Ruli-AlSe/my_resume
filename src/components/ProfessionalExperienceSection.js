@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHouseLaptop } from "@fortawesome/free-solid-svg-icons";
 import { faComputer, faGears } from "@fortawesome/free-solid-svg-icons";
 
-export default function Experience() {
+export default function ProfessionalExperience() {
   return (
     <div className="resume__section">
       <h1 className="resume__title resume__title--odd">

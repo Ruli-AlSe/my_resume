@@ -6,18 +6,16 @@ export default function Skills({ description, skills, icon, classModifier }) {
   });
   return (
     <div className="sidebar__technologies sidebar__technologies--white-gackground">
-      <p className="sidebar__text-with-line">
-        <span>
-          <FontAwesomeIcon icon={icon} />
-          {description}
-        </span>
-      </p>
+      {icon && (
+        <p className="sidebar__text-with-line">
+          <span>
+            <FontAwesomeIcon icon={icon} />
+            {description}
+          </span>
+        </p>
+      )}
       <ul
-        className={`sidebar__technologies-list ${
-          classModifier !== undefined
-            ? "sidebar__technologies-list--row"
-            : "sidebar__technologies-list"
-        }`}
+        className={`sidebar__technologies-list sidebar__technologies-list${classModifier}`}
       >
         {skillsMap}
       </ul>

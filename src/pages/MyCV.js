@@ -1,7 +1,8 @@
 import SideBar from "../components/SideBar";
-import AboutMe from "../components/AboutMe";
-import Education from "../components/Education";
-import Experience from "../components/Experience";
+import AboutMe from "../components/AboutMeSection";
+import Education from "../components/EducationSection";
+import ProfessionalExperience from "../components/ProfessionalExperienceSection";
+import SoftSkills from "../components/SoftSkillsSection";
 import "../styles/pages/mycv.scss";
 
 export default function MyCV() {
@@ -11,7 +12,8 @@ export default function MyCV() {
       <div className="resume__main-content">
         <AboutMe />
         <Education />
-        <Experience />
+        <ProfessionalExperience />
+        <SoftSkills />
       </div>
     </div>
   );
