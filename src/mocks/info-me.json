@@ -1,0 +1,191 @@
+{
+  "page": 1,
+  "results_per_page": 1,
+  "results_size": 1,
+  "total_results_size": 1,
+  "total_pages": 1,
+  "next_page": null,
+  "prev_page": null,
+  "results": [
+    {
+      "id": "YWYpQRIAACkA3RZr",
+      "type": "personal-info",
+      "first_publication_date": "2021-10-13T00:33:08+0000",
+      "last_publication_date": "2021-10-13T00:33:08+0000",
+      "lang": "en-us",
+      "data": {
+        "name": "Raul Alejandro",
+        "last_name": "Almanza Serrano",
+        "email": "ra.almanzaserrano@gmail.com",
+        "role_description": "Frontend and Experimentation Developer",
+        "birthday": "June 2, 1993",
+        "location": "Guadalajara, Jalisco, México",
+        "phone_number": "",
+        "social_media": {
+          "whatsapp": "4561146217",
+          "linkedin_url": "www.linkedin.com/in/ruli-alse",
+          "github_url": "https://github.com/Ruli-AlSe",
+          "twitter_url": "",
+          "facebook_url": "",
+          "stackoverflow_url": ""
+        },
+        "self_description": "Frontend and Experimentation Developer with 2+ years of experience creating new features and make quick fixes through AB tests, personalization campaigns and 100% experiments in thefront store of different e-commerce platforms to increase sales, conversion rates and customer engagement when visiting online stores. I am looking for a new job with new interesting projects where I can continue improving my skills and learning new technologies oriented to web software development with React.js, Redux, SASS and Ruby on Rails",
+        "education": [
+          {
+            "school": "Universidad de Guanajuato - DICIS",
+            "location": "Salamanca, Guanajuato, MX.",
+            "field": "Ingeniería en Sistemas Computacionales",
+            "dates": {
+              "start_date": "2013",
+              "end_date": "2018",
+              "continue_studiying": false
+            },
+            "description": ["Oriented to web development, and computer vision"]
+          },
+          {
+            "school": "Wizeline Academy",
+            "location": "Guadalajara, Jalisco, MX.",
+            "field": "React Bootcamp",
+            "dates": {
+              "start_date": "May 2022",
+              "end_date": "Jul 2022",
+              "continue_studiying": false
+            },
+            "description": [
+              "Work in a interesting project using React library along with Redux, React Router and Jest.",
+              "Work with functional and class components, using hooks and error boundaries to control the app."
+            ]
+          }
+        ],
+        "professional_experience": [
+          {
+            "company": "HP Inc. - By Contract",
+            "location": "Guadalajara, Jalisco, MX.",
+            "role": "Frontend and Experimentation Developer",
+            "overview": "Setup and development of ABtests and Personalization Campaigns for customer engagement and sales increase in online stores worldwide",
+            "dates": {
+              "start_date": "June 2020",
+              "end_date": "",
+              "continue_working": true
+            },
+            "accomplishments": [
+              "Increase performance in a 10% of certain features in the online stores using Javascript, HTML and CSS.",
+              "Implement new features within the store front matching comps from UX/UI team with CSS and HTML with pixel perfect design.",
+              "Development and setup of ABtests and personalization campaigns with Optimizely platform.",
+              "Active code review and experiment setup from my teammates.",
+              "Outstanding and constant communication with stakeholders and store owners worldwide.",
+              "Analysis of requirements to target right customers in personalization campaigns."
+            ],
+            "technologies_stack": [
+              "Optimizely",
+              "CSS3",
+              "SASS",
+              "HTML5",
+              "jQuery",
+              "JS ES6",
+              "React.js",
+              "Git",
+              "Postman",
+              "TypeScript"
+            ]
+          },
+          {
+            "company": "Thincode",
+            "location": "Irapuato, Guanajuato, MX.",
+            "role": "Software Developer",
+            "overview": "Development and migration of REST API for web applications using Ruby on Rails and PostgreSQL working under Agile methodologies.",
+            "dates": {
+              "start_date": "June 2018",
+              "end_date": "June 2020",
+              "continue_working": false
+            },
+            "accomplishments": [
+              "Migration from Ruby on Rails v1.5 to Ruby on Rails v5.2 of a REST API platform for a US client involved with car auction sales.",
+              "API migration following TDD pattern using RSpect to create unitary tests.",
+              "Using Vagrant to create virtual machine container to have a stable development environment.",
+              "Training of new team members.",
+              "Actively participation on reviewing Pull Requests from my teammates."
+            ],
+            "technologies_stack": [
+              "Ruby on Rails",
+              "React.js",
+              "PostgreSQL",
+              "RSpec",
+              "Vagrant",
+              "Git",
+              "Bitbucked",
+              "Docker"
+            ]
+          }
+        ],
+        "soft_skills": [
+          "Easy Adaptability",
+          "Fast learner",
+          "Commitment",
+          "Proactive",
+          "Critical thinking",
+          "Constant interest in learning",
+          "Decision making",
+          "Teamwork"
+        ],
+        "technical_skills": [
+          {
+            "section_name": "Programming Languages",
+            "advanced": ["Javascript", "Typescript"],
+            "intermediate": ["Ruby", "Python"],
+            "basic": ["C++", "C"]
+          },
+          {
+            "section_name": "Frameworks & Libraries",
+            "intermediate": [
+              "React.js",
+              "Redux-toolkit",
+              "React router",
+              "Ruby on Rails"
+            ],
+            "basic": ["Vue.js", "Node.js", "Express.js", "Jest", "TestCafe"]
+          },
+          {
+            "section_name": "DevOps",
+            "basic": ["Docker", "Vagrant", "AWS"]
+          },
+          {
+            "section_name": "Database",
+            "basic": ["PostgreSQL", "MongoDB"]
+          },
+          {
+            "section_name": "Tools",
+            "basic": ["Git", "Github", "Bitbucket", "Jira", "Slack"]
+          },
+          {
+            "section_name": "Agile",
+            "basic": ["Kanban", "Scrum"]
+          },
+          {
+            "section_name": "Languages",
+            "native": "Spanish",
+            "basic": [],
+            "conversational": ["English"],
+            "advanced": []
+          }
+        ],
+        "projects": [
+          {
+            "name": "Personal Blog",
+            "date": 2022,
+            "url": "https://raul-almanza-resume.netlify.app/",
+            "description": "Personal blog to show my resume, freelance projects and future open source projects I am planning to work with.",
+            "technologies": [
+              "Javascript",
+              "Typescript",
+              "React",
+              "SASS",
+              "HTML",
+              "BEM Design"
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}
