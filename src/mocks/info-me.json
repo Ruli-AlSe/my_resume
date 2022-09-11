@@ -45,7 +45,7 @@
           "url": "https://raul-almanza-resume.netlify.app/"
         }
       ],
-      "self_description": "Frontend and Experimentation Developer with 2+ years of experience creating new features and make quick fixes through AB tests, personalization campaigns and 100% experiments in thefront store of different e-commerce platforms to increase sales, conversion rates and customer engagement when visiting online stores. I am looking for a new job with new interesting projects where I can continue improving my skills and learning new technologies oriented to web software development with React.js, Redux, SASS and Ruby on Rails",
+      "self_description": "Frontend and Experimentation Developer with 2+ years of experience creating new features and make quick fixes through AB tests, personalization campaigns and 100% experiments in the front store of different e-commerce platforms to increase sales, conversion rates and customer engagement when visiting online stores. I am looking for a new job with new interesting projects where I can continue improving my skills and learning new technologies oriented to web software development with React.js, Redux, SASS and Ruby on Rails",
       "education": [
         {
           "school": "Universidad de Guanajuato - DICIS",
@@ -92,18 +92,25 @@
             "Outstanding and constant communication with stakeholders and store owners worldwide.",
             "Analysis of requirements to target right customers in personalization campaigns."
           ],
-          "technologies_stack": [
-            "Optimizely",
-            "CSS3",
-            "SASS",
-            "HTML5",
-            "jQuery",
-            "JS ES6",
-            "React.js",
-            "Git",
-            "Postman",
-            "TypeScript"
-          ]
+          "technologies_stack": {
+            "skills": [
+              {
+                "title": "",
+                "value": [
+                  "Optimizely",
+                  "CSS3",
+                  "SASS",
+                  "HTML5",
+                  "jQuery",
+                  "JS ES6",
+                  "React.js",
+                  "Git",
+                  "Postman",
+                  "TypeScript"
+                ]
+              }
+            ]
+          }
         },
         {
           "company": "Thincode",
@@ -122,27 +129,44 @@
             "Training of new team members.",
             "Actively participation on reviewing Pull Requests from my teammates."
           ],
-          "technologies_stack": [
-            "Ruby on Rails",
-            "React.js",
-            "PostgreSQL",
-            "RSpec",
-            "Vagrant",
-            "Git",
-            "Bitbucked",
-            "Docker"
-          ]
+          "technologies_stack": {
+            "skills": [
+              {
+                "title": "",
+                "value": [
+                  "Ruby on Rails",
+                  "React.js",
+                  "PostgreSQL",
+                  "RSpec",
+                  "Vagrant",
+                  "Git",
+                  "Bitbucked",
+                  "Docker"
+                ]
+              }
+            ]
+          }
         }
       ],
       "soft_skills": [
-        "Easy Adaptability",
-        "Fast learner",
-        "Commitment",
-        "Proactive",
-        "Critical thinking",
-        "Constant interest in learning",
-        "Decision making",
-        "Teamwork"
+        {
+          "section_name": "",
+          "skills": [
+            {
+              "title": "",
+              "value": [
+                "Easy Adaptability",
+                "Fast learner",
+                "Commitment",
+                "Proactive",
+                "Critical thinking",
+                "Constant interest in learning",
+                "Decision making",
+                "Teamwork"
+              ]
+            }
+          ]
+        }
       ],
       "technical_skills": [
         {

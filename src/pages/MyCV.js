@@ -16,10 +16,10 @@ export default function MyCV() {
         technicalSkills={myInfo.technical_skills}
       ></SideBar>
       <div className="resume__main-content">
-        <AboutMe />
-        <Education />
-        <ProfessionalExperience />
-        <SoftSkills />
+        <AboutMe info={myInfo.self_description} />
+        <Education education={myInfo.education} />
+        <ProfessionalExperience experience={myInfo.professional_experience} />
+        <SoftSkills softSkills={myInfo.soft_skills} />
       </div>
     </div>
   );

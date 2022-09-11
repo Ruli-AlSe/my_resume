@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 export default function Skills({ description, skills, icon, classModifier }) {
   const skillsMap = skills.map((elem, idx) => (
     <li key={idx + description}>
-      <b>{`${elem.title}: `}</b>
+      {elem.title && <b>{`${elem.title}: `}</b>}
       {elem.value.length > 0 ? elem.value.join(", ") : elem.value}
     </li>
   ));
