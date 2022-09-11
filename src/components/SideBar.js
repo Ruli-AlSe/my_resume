@@ -4,87 +4,99 @@ import {
   faGithub,
   faLinkedin,
   faWhatsapp,
+  faStackOverflow,
+  faTwitter,
+  faFacebook,
 } from "@fortawesome/free-brands-svg-icons";
 import {
   faEnvelope,
   faLocationDot,
   faCakeCandles,
   faComputer,
-  faGears,
-  faTerminal,
-  faCode,
   faLanguage,
+  faPhone,
+  faEarth,
+  faBookAtlas,
+  faScrewdriverWrench,
+  faDatabase,
+  faWrench,
+  faCheck,
 } from "@fortawesome/free-solid-svg-icons";
 import "../styles/components/sidebar.scss";
 
-export default function SideBar() {
+export default function SideBar({
+  personalInfo,
+  socialMedia,
+  technicalSkills,
+}) {
+  const socialMediaIcons = {
+    github: faGithub,
+    linkedin: faLinkedin,
+    whatsapp: faWhatsapp,
+    stackoverflow: faStackOverflow,
+    twitter: faTwitter,
+    facebook: faFacebook,
+    personalsite: faEarth,
+  };
+  const socialMediaMap = socialMedia.map((item, idx) => (
+    <p key={idx + item.name} className="sidebar__text">
+      <FontAwesomeIcon icon={socialMediaIcons[item.name]} />
+      <a href={item.url}>{item.user}</a>
+    </p>
+  ));
+  const techSkillsIcons = {
+    "Programming Languages": faComputer,
+    "Frameworks & Libraries": faBookAtlas,
+    DevOps: faScrewdriverWrench,
+    Database: faDatabase,
+    Tools: faWrench,
+    Agile: faCheck,
+    Languages: faLanguage,
+  };
+  const technicalSkillsMap = technicalSkills.map((item, idx) => {
+    return (
+      <Skills
+        key={idx + item.section_name}
+        description={item.section_name}
+        skills={item.skills}
+        icon={techSkillsIcons[item.section_name]}
+      />
+    );
+  });
+
   return (
     <div className="sidebar">
       <div className="sidebar__profile-pic">
-        <img
-          src="https://media-exp1.licdn.com/dms/image/C4D03AQFbmxRfcXiyxg/profile-displayphoto-shrink_800_800/0/1592952962315?e=1666828800&v=beta&t=RV_S2I31GxIGeeLih5g21XixOlx1kgs1wFHfHLnBCmw"
-          alt="profile pic"
-        />
+        <img src={personalInfo.photo_url} alt="profile pic" />
       </div>
       <h2 className="sidebar__text sidebar__text--name">
-        Raul Alejandro Almanza Serrano
+        {`${personalInfo.name} ${personalInfo.last_name}`}
       </h2>
       <h3 className="sidebar__text sidebar__text--title">
-        Frontend and Experimentation Developer
+        {personalInfo.role_description}
       </h3>
       <div className="sidebar__personal-info">
         <p className="sidebar__text">
+          <FontAwesomeIcon icon={faEnvelope} />
+          {personalInfo.email}
+        </p>
+        <p className="sidebar__text">
           <FontAwesomeIcon icon={faCakeCandles} />
-          June 2, 1993
+          {personalInfo.birthday}
         </p>
         <p className="sidebar__text">
           <FontAwesomeIcon icon={faLocationDot} />
-          Tlaquepaque, Jal.
+          {personalInfo.location}
         </p>
-        <p className="sidebar__text">
-          <FontAwesomeIcon icon={faWhatsapp} />
-          +52 (456) 114 6217
-        </p>
-        <div className="sidebar__social-media">
+        {personalInfo.phone_number.length > 0 && (
           <p className="sidebar__text">
-            <FontAwesomeIcon icon={faLinkedin} />
-            Linkedin: <span>www.linkedin.com/in/ruli-alse</span>
+            <FontAwesomeIcon icon={faPhone} />
+            {personalInfo.phone_number}
           </p>
-          <p className="sidebar__text">
-            <FontAwesomeIcon icon={faGithub} />
-            Github: <span>https://github.com/Ruli-AlSe</span>
-          </p>
-          <p className="sidebar__text">
-            <FontAwesomeIcon icon={faEnvelope} />
-            Gmail: <span>ra.almazaserrano@gmail.com</span>
-          </p>
-        </div>
+        )}
+        <div className="sidebar__social-media">{socialMediaMap}</div>
       </div>
-      <Skills
-        description={"Frontend"}
-        skills={["React.js", "Jest", "SASS", "HTML5", "jQuery", "JS ES6"]}
-        icon={faComputer}
-      />
-      <Skills
-        description={"Backend"}
-        skills={["Ruby on Rails", "Postgresql"]}
-        icon={faGears}
-      />
-      <Skills
-        description={"DevOps"}
-        skills={["Github CI/CD", "Docker", "Vagrant"]}
-        icon={faTerminal}
-      />
-      <Skills
-        description={"Programing Languages"}
-        skills={["JavaScript", "TypeScript", "Ruby", "Python"]}
-        icon={faCode}
-      />
-      <Skills
-        description={"Languages"}
-        skills={["Spanish (native)", "English (Conversational)"]}
-        icon={faLanguage}
-      />
+      {technicalSkillsMap}
     </div>
   );
 }

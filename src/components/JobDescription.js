@@ -1,5 +1,3 @@
-import Skills from "./Skills";
-
 export default function JobDescription({
   dates,
   title,
@@ -30,12 +28,6 @@ export default function JobDescription({
           Major accomplishments:
         </p>
         <ul className="resume__job-details">{accomplishmentsMap}</ul>
-        <Skills
-          description={"Technologies"}
-          skills={technologiesList}
-          icon={icon}
-          classModifier="--row"
-        />
       </div>
     </div>
   );
