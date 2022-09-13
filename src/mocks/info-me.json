@@ -57,20 +57,6 @@
             "continue_studiying": false
           },
           "description": ["Oriented to web development, and computer vision"]
-        },
-        {
-          "school": "Wizeline Academy",
-          "location": "Guadalajara, Jalisco, MX.",
-          "field": "React Bootcamp",
-          "dates": {
-            "start_date": "May 2022",
-            "end_date": "Jul 2022",
-            "continue_studiying": false
-          },
-          "description": [
-            "Work in a interesting project using React library along with Redux, React Router and Jest.",
-            "Work with functional and class components, using hooks and error boundaries to control the app."
-          ]
         }
       ],
       "professional_experience": [
@@ -86,11 +72,11 @@
           },
           "accomplishments": [
             "Increase performance in a 10% of certain features in the online stores using Javascript, HTML and CSS.",
-            "Implement new features within the store front matching comps from UX/UI team with CSS and HTML with pixel perfect design.",
-            "Development and setup of ABtests and personalization campaigns with Optimizely platform.",
-            "Active code review and experiment setup from my teammates.",
-            "Outstanding and constant communication with stakeholders and store owners worldwide.",
-            "Analysis of requirements to target right customers in personalization campaigns."
+            "Implement new features within the store front to increase customer interaction matching comps from the UX/UI team with pixel perfect design.",
+            "Development and setup of AB tests and personalization campaigns to increase sales and conversion rates using Optimizely platform.",
+            "Active code review and experiment setup from my teammates to reduce bugs.",
+            "Outstanding and constant communication with stakeholders and store owners worldwide to clear goals and metrics of each campaign.",
+            "Analysis of requirements to target the right customers in personalization campaigns."
           ],
           "technologies_stack": {
             "skills": [
@@ -123,11 +109,11 @@
             "continue_working": false
           },
           "accomplishments": [
-            "Migration from Ruby on Rails v1.5 to Ruby on Rails v5.2 of a REST API platform for a US client involved with car auction sales.",
-            "API migration following TDD pattern using RSpect to create unitary tests.",
-            "Using Vagrant to create virtual machine container to have a stable development environment.",
-            "Training of new team members.",
-            "Actively participation on reviewing Pull Requests from my teammates."
+            "Migration from Ruby on Rails v1.5 to Ruby on Rails v5.2 of a REST API platform for a US client involved with car auction sales to take advantage of new features and improve user experience and app performance.",
+            "API migration following TDD pattern using RSpect to create unitary tests to reduce bugs.",
+            "Using Vagrant to create virtual machine containers to have a stable development environment.",
+            "Training of new team members to get them ready to contribute in projects with US clients.",
+            "Actively participating in reviewing Pull Requests from my teammates to reduce bugs."
           ],
           "technologies_stack": {
             "skills": [
@@ -267,6 +253,17 @@
             "SASS",
             "HTML",
             "BEM Design"
+          ]
+        }
+      ],
+      "certifications": [
+        {
+          "name": "React Bootcamp",
+          "year": 2022,
+          "company": "Wizeline Academy",
+          "description": [
+            "Work in a interesting project using React library along with Redux, React Router and Jest.",
+            "Work with functional and class components, using hooks and error boundaries to control the app."
           ]
         }
       ]

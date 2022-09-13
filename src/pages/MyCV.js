@@ -3,6 +3,7 @@ import AboutMe from "../components/AboutMeSection";
 import Education from "../components/EducationSection";
 import ProfessionalExperience from "../components/ProfessionalExperienceSection";
 import SoftSkills from "../components/SoftSkillsSection";
+import Certification from "../components/CertificationSection";
 import "../styles/pages/mycv.scss";
 import data from "../mocks/info-me.json";
 
@@ -20,6 +21,7 @@ export default function MyCV() {
         <Education education={myInfo.education} />
         <ProfessionalExperience experience={myInfo.professional_experience} />
         <SoftSkills softSkills={myInfo.soft_skills} />
+        <Certification certifications={myInfo.certifications} />
       </div>
     </div>
   );
